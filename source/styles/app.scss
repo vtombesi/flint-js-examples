@@ -1,0 +1,17 @@
+$bg-color: #deea6d;
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+$main-font: 'Ubuntu Mono', monospace;
+
+body {
+  background-color: $bg-color;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+}

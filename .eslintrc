@@ -1,0 +1,15 @@
+{
+	"extends": ["eslint-config-airbnb"],
+  "rules": {
+    "linebreak-style": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "one-var": "off",
+    "func-names": ["error", "never"],
+    "no-console": "off"
+  },
+  "globals": {
+    "window": true,
+    "document": true
+  }
+}
