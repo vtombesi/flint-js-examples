@@ -1,10 +1,15 @@
 const path = require('path');
+const fs = require('fs');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const cssExtractor = new ExtractTextPlugin('styles.css');
 const htmlExtractor = new ExtractTextPlugin('index.html');
 const bowerResolver = new webpack.ResolverPlugin(new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('.bower.json', ['main']));
+
+const includePaths = [
+  fs.realpathSync(__dirname + '/source/app'),
+];
 
 module.exports = {
 
@@ -56,7 +61,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude: /node_modules|bower_components/,
+        include: includePaths,
         loader: 'babel-loader',
       },
       {

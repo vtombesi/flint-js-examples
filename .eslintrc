@@ -6,7 +6,10 @@
     "class-methods-use-this": "off",
     "one-var": "off",
     "func-names": ["error", "never"],
-    "no-console": "off"
+    "no-console": "off",
+    "import/prefer-default-export": "off",
+    "max-len": "off",
+    "no-param-reassign": "off",
   },
   "globals": {
     "window": true,

@@ -22,7 +22,8 @@
     "babel-runtime": "^6.9.0",
     "bluebird": "^3.4.0",
     "elements-js": "git+https://github.com/blackmirror1980/elements-js.git",
-    "flavor-js": "^0.3.0"
+    "flavor-js": "^0.3.0",
+    "flint-js": "^1.5.14"
   },
   "devDependencies": {
     "babel-core": "^6.8.0",
